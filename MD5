@@ -1,0 +1,17 @@
+8a5891e101e53266eed561434c7c3301 *DESCRIPTION
+a2a50c451f551dde8e8f821ae365c6b6 *NAMESPACE
+d5ed3136252352ae62afa8df2b4725ee *NEWS.md
+f471501c1f2252413c5095ba4c23ad8d *R/Centering.R
+8f49851b985a1ffb8afd0a49623da69f *R/hooks_rtl.R
+7200e1f4d0f8f6e7593df14a7a22b40d *R/markdown_rtl.R
+58d0f62da1941612f788d957fc0e4308 *R/markdown_rtl_header.R
+8fcea5c64c0b01d66af7b9142ba2373e *R/remove_escape_latex.R
+3289ef3f00b36c499ba5f795bfaf0bd0 *R/tab_header_lbl.R
+9ba47229af4ee89a3a5f3b44a826827f *R/utils.R
+ce8fcf585b33b8958f01c8db5562a980 *README.md
+9d1adb50d37ac5f77140c349487d6413 *man/Centering.Rd
+166f700b25aa893e849238a64d088fa2 *man/hooks_rtl.Rd
+ad04f09489409f6eb04f53753a7d3849 *man/markdown_rtl.Rd
+b988cfc90a581203682718c5fe746b76 *man/markdown_rtl_header.Rd
+071608c552b6d2f27ffbe78d80665e56 *man/remove_escape_latex.Rd
+31989be294e496f45b2d5aa67e6ba4fe *man/tab_header_lbl.Rd
