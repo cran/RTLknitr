@@ -1,6 +1,6 @@
 #' Enable Right-to-Left (RTL) Formatting for Markdown Documents
 #'
-#' This function modifies the behavior of \code{\link{knitr}} output hooks to handle RTL (right-to-left)
+#' This function modifies the behavior of \code{\link[knitr]{knit}} output hooks to handle RTL (right-to-left)
 #' text formatting for Markdown documents, particularly for languages like Persian and Arabic.
 #'
 #' @details

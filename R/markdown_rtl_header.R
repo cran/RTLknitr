@@ -7,6 +7,8 @@
 #' @export
 #' @import knitr bookdown
 #' @examples
+#' markdown_rtl_header()
+#' 
 markdown_rtl_header <- function() {
   txt <- '---
 title: "Example"

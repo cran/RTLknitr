@@ -13,7 +13,7 @@ markdown_rtl(...)
 The function has no explicit return value. It modifies the behavior of \code{knit_hooks} for RTL formatting.
 }
 \description{
-This function modifies the behavior of \code{\link{knitr}} output hooks to handle RTL (right-to-left)
+This function modifies the behavior of \code{\link[knitr]{knit}} output hooks to handle RTL (right-to-left)
 text formatting for Markdown documents, particularly for languages like Persian and Arabic.
 }
 \details{

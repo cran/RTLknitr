@@ -13,3 +13,7 @@ A character string containing the YAML header.
 This function generates a YAML header for an R Markdown document that will produce a PDF output
 with support for Persian typesetting using the \code{xepersian} package and the \code{Arial} font.
 }
+\examples{
+markdown_rtl_header()
+
+}
