@@ -1,8 +1,8 @@
 Package: RTLknitr
 Type: Package
 Title: Right to Left Dynamic Documents Using 'knitr'
-Version: 1.0.1
-Date: 2025-07-28
+Version: 1.1.1
+Date: 2025-11-21
 Authors@R: person("Foad", "Esmaeili", email = "foadesmaeili5@gmail.com", role = c("aut", "cre", "cph"),
                   comment = c(ORCID = "0000-0002-9638-0807"))
 Maintainer: Foad Esmaeili <foadesmaeili5@gmail.com>
@@ -18,8 +18,8 @@ RoxygenNote: 7.3.2
 Depends: R (>= 4.1)
 Imports: knitr, magrittr, gt, bookdown
 NeedsCompilation: no
-Packaged: 2025-07-28 15:56:50 UTC; foad
+Packaged: 2025-11-21 16:20:31 UTC; foad
 Author: Foad Esmaeili [aut, cre, cph] (ORCID:
     <https://orcid.org/0000-0002-9638-0807>)
 Repository: CRAN
-Date/Publication: 2025-07-28 16:10:02 UTC
+Date/Publication: 2025-11-21 16:30:02 UTC

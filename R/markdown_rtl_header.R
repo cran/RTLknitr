@@ -16,8 +16,10 @@ author: "RTLknitr"
 date: "`r Sys.Date()`"
 output:
   bookdown::pdf_document2:
-  latex_engine: xelatex
+    latex_engine: xelatex
 header-includes:
+  - \\usepackage{hyperref}
+  - \\usepackage{bidi}
   - \\usepackage{xepersian}
   - \\settextfont{Arial}
 ---'

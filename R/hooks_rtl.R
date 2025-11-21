@@ -11,6 +11,8 @@
 #' The function returns a list of customized \code{knit_hooks} that handle RTL text formatting.
 #' It modifies the output, messages, warnings, errors, inline expressions, and source code
 #' to include appropriate commands for RTL languages.
+#' 
+#' When `echo=FALSE` you need to use `rtl=TRUE` in order to get the output appropriately.
 #'
 #' @export
 #'
@@ -39,8 +41,11 @@ hooks_rtl <- function(fontcolor = "black", backcolor = "gray") {
   error_old <- knitr::knit_hooks$get("error")
 
   output_new <- function(x, options) {
-    if (options$echo) {
-      paste0("\\latin \n", output_old(x, options), "\\persian \n")
+    if(is.null(options$rtl)) {
+      options$rtl <- FALSE
+    }
+    if (options$echo|options$rtl) {
+      paste0("\n\\latin \n", output_old(x, options), "\n\\persian \n")
     } else {
       output_old(x, options)
     }
@@ -48,7 +53,7 @@ hooks_rtl <- function(fontcolor = "black", backcolor = "gray") {
 
   source_new <- function(x, options) {
     if (options$echo) {
-      paste0("\\latin \n", source_old(x, options), "\\persian \n")
+      paste0("\n\\latin \n", source_old(x, options), "\n\\persian \n")
     } else {
       source_old(x, options)
     }
@@ -56,7 +61,7 @@ hooks_rtl <- function(fontcolor = "black", backcolor = "gray") {
 
   message_new <- function(x, options) {
     if (options$echo) {
-      paste0("\\latin\n", message_old(x, options), "\\persian\n")
+      paste0("\n\\latin\n", message_old(x, options), "\n\\persian\n")
     } else {
       message_old(x, options)
     }
@@ -64,7 +69,7 @@ hooks_rtl <- function(fontcolor = "black", backcolor = "gray") {
 
   warning_new <- function(x, options) {
     if (options$echo) {
-      paste0("\\latin\n", warning_old(x, options), "\\persian\n")
+      paste0("\n\\latin\n", warning_old(x, options), "\n\\persian\n")
     } else {
       warning_old(x, options)
     }
@@ -82,7 +87,7 @@ hooks_rtl <- function(fontcolor = "black", backcolor = "gray") {
 
   error_new <- function(x, options) {
     if (options$echo) {
-      paste0("\\latin\n", error_old(x, options), "\\persian\n")
+      paste0("\n\\latin\n", error_old(x, options), "\n\\persian\n")
     } else {
       error_old(x, options)
     }

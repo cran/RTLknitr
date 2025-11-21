@@ -1,3 +1,4 @@
-# RTLknitr 1.0.1
+# RTLknitr 1.1.1
 
-* Added a `NEWS.md` file to track changes to the package.
+* Added the `rtl` argument to chunk options for improved handling of right-to-left text when `echo = FALSE`
+* Error in `markdown_rtl_header` has been fixed

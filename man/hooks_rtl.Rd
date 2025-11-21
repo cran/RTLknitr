@@ -15,6 +15,8 @@ hooks_rtl(fontcolor = "black", backcolor = "gray")
 The function returns a list of customized \code{knit_hooks} that handle RTL text formatting.
 It modifies the output, messages, warnings, errors, inline expressions, and source code
 to include appropriate commands for RTL languages.
+
+When `echo=FALSE` you need to use `rtl=TRUE` in order to get the output appropriately.
 }
 \description{
 This function defines customized \code{knitr} hooks to handle RTL (right-to-left)
